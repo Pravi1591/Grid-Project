@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+.bg1{
+    background-image: url("https://w0.peakpx.com/wallpaper/400/451/HD-wallpaper-plant-leaves-water-drops-dark-background-nature.jpg");
+    
+}
+.bg2 {
+    background-image: url("https://i.pinimg.com/236x/f3/96/96/f39696f62da511147d6a936c64bac722.jpg");
+    
+    
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+h2{
+    font-size: 40px;
+    font: weight 500px;
+    margin:10px;
+}
+h2 span{
+    font-size: 15px;
+}
+p{
+    font-size: 15px;
+}
+.container>div{
+    height: 250px;
+    cursor: pointer;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position:fixed;
+    transition: all 0.5s ease-in;  
+}
+.container>div:hover{
+    opacity: 0.8;
+    transform: scale(0.98);
+}
